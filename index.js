@@ -20,15 +20,19 @@ takeANumber(katzDeliLine, "Ada");
 //
 
 function nowServing (line){
-  //Check to see if line contains data
-  if(line.length === 0){
-    return 'There is nobody waiting to be served!'
-    //if length is greater than 0 shift to remove the first item and add it to serving -
-        }else if (line.length > 0){
-              return `Currently serving ${katzDeliLine.shift()}.` ;
-  }
+
+    function serving (str){
+      return `Currently serving ${str}`;
+    }
+        if(line.length === 0){
+        return
+      }else {
+      return serving(katzDeliLine.shift())
+      }
+
 }
 nowServing(katzDeliLine);
+
 
 // 3. Build a function `currentLine` that returns the current line. For example, if `katzDeliLine` is currently `["Ada", "Grace"]`, `currentLine(katzDeliLine)` would return `"The line is currently: 1. Ada, 2. Grace"`.  If there is nobody in line, it should return `"The line is currently empty."`
 
