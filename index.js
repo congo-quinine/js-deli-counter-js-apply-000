@@ -42,7 +42,7 @@ function currentLine (line){
   let currentLine = `The line is currently: `;
   if(line.length > 0){
     for (let i=0; i<line.length; i++){
-        currentLine += `${i+1}. ${line[i]},`;
+        currentLine += `${i+1}. ${line[i]}, `;
         }
         return currentLine;
           }else if (line.length === 0){
