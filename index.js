@@ -3,7 +3,7 @@
 // `var katzDeli = [];`
 //
 // 1. Build a function that a new customer will use when entering the deli. The function, `takeANumber`, should accept the current line of people, `katzDeliLine`, along with the new person's name as parameters. The function should return their position in line. And don't go being too programmer-y and give them their index. These are normal people. If they are 7th in line, tell them that. Don't get their hopes up by telling them they are number 6 in line.
-// 
+//
 
 
 var katzDeliLine = ['bob'];
@@ -12,7 +12,7 @@ function takeANumber (line, name){
     //push name to end of katzDeliLine array
     line.push(name);
     //return a string and use array indexOF to find the position of the new customer and add 1 to give a non indexed number;
-    return `Hello ${name}, your position in the line is ` + (line.indexOf(name)+1);
+    return `Welcome ${name}, you are number 1 in line.` + (line.indexOf(name)+1);
 
 }
 takeANumber(katzDeliLine, "Ada");
@@ -23,11 +23,11 @@ takeANumber(katzDeliLine, "Ada");
 function nowServing (line){
   //Check to see if line contains data
   if(line.length === 0){
-    return 'There is nobody waiting to be served'
+    return 'There is nobody waiting to be served!'
     //if length is greater than 0 shift to remove the first item and add it to serving -
         }else if (line.length > 0){
             let serving = katzDeliLine.shift();
-              return serving;
+              return `Currently serving ${serving}`;
   }
 
   return;
