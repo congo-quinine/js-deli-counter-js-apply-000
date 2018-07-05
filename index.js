@@ -40,7 +40,7 @@ function currentLine (line){
     for (let i=0; i<line.length; i++){
         currentLine += `${i+1}. ${line[i]}, `;
         }
-        return currentLine.slice(0 ,currentLine.length - 1);
+        return currentLine.slice(0 ,currentLine.length - 2);
           }else if (line.length === 0){
             return 'The line is currently empty.';
       }
