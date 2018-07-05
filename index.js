@@ -12,7 +12,7 @@ function takeANumber (line, name){
     //push name to end of katzDeliLine array
     line.push(name);
     //return a string and use array indexOF to find the position of the new customer and add 1 to give a non indexed number;
-    return `Welcome ${name}, you are number 1 in line.` + (line.indexOf(name)+1);
+    return `Welcome ${name}, you are number ${line.indexOf(name)+1} in line.`
 
 }
 takeANumber(katzDeliLine, "Ada");
