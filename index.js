@@ -27,7 +27,7 @@ function nowServing (line){
     //if length is greater than 0 shift to remove the first item and add it to serving -
         }else if (line.length > 0){
             let serving = katzDeliLine.shift();
-              return `Currently serving ${serving}`;
+              return `Currently serving ${serving}.`;
   }
 
   return;
