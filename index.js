@@ -12,7 +12,7 @@ function takeANumber (line, name){
     //push name to end of katzDeliLine array
     line.push(name);
     //return a string and use array indexOF to find the position of the new customer and add 1 to give a non indexed number;
-    return `Welcome ${name}, you are number ${line.indexOf(name)+1} in line.`
+    return `Welcome, ${name}. You are number ${line.indexOf(name)+1} in line.`
 
 }
 takeANumber(katzDeliLine, "Ada");
@@ -39,10 +39,10 @@ nowServing(katzDeliLine);
 
 
 function currentLine (line){
-  let currentLine = `The line is currently`;
+  let currentLine = `The line is currently: `;
   if(line.length > 0){
     for (let i=0; i<line.length; i++){
-        currentLine += ` ${i+1}, ${line[i]}`;
+        currentLine += `${i+1}. ${line[i]},`;
         }
         return currentLine;
           }else if (line.length === 0){
