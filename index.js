@@ -6,7 +6,6 @@
 //
 
 
-var katzDeliLine = ['bob'];
 
 function takeANumber (line, name){
     //push name to end of katzDeliLine array
@@ -29,9 +28,6 @@ function nowServing (line){
             let serving = katzDeliLine.shift();
               return `Currently serving ${serving}.`;
   }
-
-  return;
-
 }
 nowServing(katzDeliLine);
 
